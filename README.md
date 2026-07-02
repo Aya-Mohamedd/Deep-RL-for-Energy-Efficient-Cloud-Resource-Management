@@ -2,7 +2,7 @@
 
 Reinforcement learning for multi-objective cloud task scheduling. Two agents: **DQN** (value-based) and **PPO** (policy-gradient actor-critic), both from **Stable-Baselines3** are trained inside a custom `gymnasium.Env` that simulates a heterogeneous multi-server cluster under stochastic task arrivals, and benchmarked against four classic heuristics: **Round Robin**, **SJF** (shortest job first), **Greedy Min-Min**, and **Random**.
 
-The reward is a scalarized combination of three competing objectives: **throughput**, **latency**, and **energy consumption** — controlled by weights `(w1, w2, w3)`. This repo explores how well the learned policies trade these objectives off compared to static heuristics, and how they generalize across workload intensity, server counts, heterogeneous power profiles, and transient failures.
+The reward is a scalarized combination of three competing objectives: **throughput**, **latency**, and **energy consumption**  controlled by weights `(w1, w2, w3)`. This repo explores how well the learned policies trade these objectives off compared to static heuristics, and how they generalize across workload intensity, server counts, heterogeneous power profiles, and transient failures.
 
 ## Repo Contents
 
